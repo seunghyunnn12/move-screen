@@ -1,0 +1,74 @@
+header {
+    position: fixed;
+    z-index: 3;
+    color: #fff;
+    top: 0;
+    width: 100%;
+}
+
+header .rel h1 {
+    font-size: 3rem;
+
+}
+
+header .rel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* aside */
+aside {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY();
+    z-index: 10;
+}
+
+aside ul li {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: blue;
+    font-size: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+aside ul li + li {
+    margin-top: 1rem;
+
+}
+
+aside ul li::before {
+    content: "intro";
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    left: -4.5rem;
+    opacity: 0;
+}
+
+aside ul li.active::before {
+    opacity: 1;
+}
+
+aside ul li.active {
+    background-color: red;
+}
+
+aside ul li:nth-child(1)::before {
+    content: "intro";
+}
+aside ul li:nth-child(2)::before {
+    content: "section1";
+}
+aside ul li:nth-child(3)::before {
+    content: "section2";
+}
+aside ul li:nth-child(4)::before {
+    content: "section3";
+}
+aside ul li:nth-child(5)::before {
+    content: "section4";
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+section:nth-child(even) {
+    background-color: rgb(255, 233, 185);
+}
+
+ul,
+dl,
+ol {
+    list-style: none;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.rel {
+    max-width: 144rem;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.tit-wrap {
+    color: #0a0a0a;
+}
+
+
+.tit-wrap h1 {
+    font-size: 6rem;
+}
+
+.tit-wrap p {
+    font-size: 1.8rem;
+}
